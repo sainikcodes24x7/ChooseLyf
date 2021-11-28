@@ -1174,7 +1174,7 @@ if (isset($_POST['submit'])) {
 
                               <!-- SECTION TITLE -->
                               <div class="section-title wow fadeInUp" data-wow-delay="0.4s">
-                                   <h2>What are your symptoms?</h2>
+                                   <h2>Do You Have Any symptoms?</h2>
                               </div>
 
                               <div class="wow fadeInUp" data-wow-delay="0.8s">
@@ -1183,7 +1183,7 @@ if (isset($_POST['submit'])) {
                                    <div class="col-md-12 col-sm-12">
 
                                         <div>
-                                          <h3 class="class1">  <label for="select"><a href="new-detail.php">Click me to Select Symptoms <i class="fas fa-stethoscope"></i></i></a></label></h3>
+                                          <h3 class="class1">  <label for="select"><a href="new-detail.php">WANT TO KNOW ABOUT YOUR SYMPTOMS <i class="fas fa-stethoscope"></i></i></a></label></h3>
                                         </div>
                                    </div>
 
@@ -1264,7 +1264,7 @@ if (isset($_POST['submit'])) {
                     </div>
 
                    <div class="col-md-6 col-sm-6">
-                         <img src="images/appointment-image.jpg" class="img-responsive" alt="">
+                         <img src="https://webstockreview.net/images/clipart-doctor-sign.jpg" class="img-responsive" alt="">
                    </div>
 
                </div>
@@ -1282,11 +1282,11 @@ if (isset($_POST['submit'])) {
                     <div class="col-md-4 col-sm-6">
                          <div class="footer-thumb">
                               <h4 class="wow fadeInUp" data-wow-delay="0.4s">Contact Info</h4>
-                              <p>STL Hospital<br>MANIT Square-462003<br>Bhopal, M.P</p>
+                              <p>ChooseLyf Limited<br>College Square-745896<br>Kolkata, W.B.</p>
 
                               <div class="contact-info">
-                                   <p><i class="fa fa-phone"></i> +91-010-070-0170</p>
-                                   <p><i class="fa fa-envelope-o"></i> <a href="#">stl@company.com</a></p>
+                                   <p><i class="fa fa-phone"></i> +91-9330554877</p>
+                                   <p><i class="fa fa-envelope-o"></i> <a href="#">chooselyf@gmail.com</a></p>
                               </div>
                          </div>
                     </div>
@@ -1297,15 +1297,15 @@ if (isset($_POST['submit'])) {
                     <div class="col-md-12 col-sm-12 border-top">
                          <div class="col-md-4 col-sm-6">
                               <div class="copyright-text">
-                                   <p>Copyright &copy; 2020 STL </p>
+                                   <p>Copyright &copy; 2021 ChooseLyf</p>
                               </div>
                          </div>
                          <div class="col-md-6 col-sm-6">
                               <div class="footer-link">
-                                   <a href="#">STL Laboratory Tests</a>
+                                   <a href="#">ChooseLyf Tests</a>
                                    <a href="#">Departments</a>
                                    <a href="#">Insurance Policy</a>
-                                   <a href="#">Careers</a>
+                                   <!-- <a href="#">Careers</a> -->
                               </div>
                          </div>
                          <div class="col-md-2 col-sm-2 text-align-center">
