@@ -485,10 +485,12 @@ header span i {
   -----------------------------------------*/
 
 #about {
-  background: url('../images/about-bg.jpg') no-repeat top center;
+  background: url('https://wallpaperaccess.com/full/124590.jpg') no-repeat top center;
   background-size: cover;
   padding-top: 150px;
+  width: 100vw;
   padding-bottom: 150px;
+  /* color: white; */
 }
 
 .profile img,

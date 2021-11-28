@@ -227,8 +227,7 @@ if (isset($_POST['submit'])) {
         $number43 = 1;
     } else {
         $number43 = 0;
-    } // if(isset($_POST['symptom44'])) // else //  $number44=0;
-    //   $number44 = 1;
+    } // if(isset($_POST['symptom44'])) // else //  $number44=0; //   $number44 = 1;
     if (isset($_POST['symptom45'])) {
         $number45 = 1;
     } else {
@@ -1008,8 +1007,10 @@ if (isset($_POST['submit'])) {
 	box-shadow: 0px 0px 10px 4px black;
 
 }
-
-  </style>
+.wow {
+          color: #a5c422;
+     }
+</style>
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
      <meta name="description" content="">
@@ -1046,12 +1047,12 @@ if (isset($_POST['submit'])) {
                <div class="row">
 
                     <div class="col-md-4 col-sm-5">
-                         <p>Welcome to Health Care Bot</p>
+                         <p>Welcome to ChooseLyf</p>
                     </div>
 
                     <div class="col-md-8 col-sm-7 text-align-right">
                          <span class="phone-icon"><i class="fa fa-phone"></i> +91-9330554877</span>
-                         <span class="email-icon"><i class="fa fa-envelope-o"></i> <a href="#">stl@company.com</a></span>
+                         <span class="email-icon"><i class="fa fa-envelope-o"></i> <a href="#">chooselyf@gmail.com</a></span>
                     </div>
 
                </div>
@@ -1071,7 +1072,7 @@ if (isset($_POST['submit'])) {
                     </button>
 
                     <!-- lOGO TEXT HERE -->
-                    <a href="home.php" class="navbar-brand"><i class="fa fa-h-square"></i>ealth Care Bot</a>
+                    <a href="home.php" class="navbar-brand"><i class="fa fa-c-square"></i>ChooseLyf App</a>
                </div>
 
                <!-- MENU LINKS -->
@@ -1138,16 +1139,16 @@ if (isset($_POST['submit'])) {
 
                     <div class="col-md-6 col-sm-6">
                          <div class="about-info">
-                              <h2 class="wow fadeInUp" data-wow-delay="0.6s">Welcome to Your <i class="fa fa-h-square"></i>ealth Care Bot</h2>
+                              <h2 class="wow fadeInUp" data-wow-delay="0.6s">Welcome to  <i class="fa fa-c-square"></i>ChooseLyf App</h2>
                               <div class="wow fadeInUp" data-wow-delay="0.8s">
-                                   <p>Improve health and care with us</p>
+                                   <!-- <p>Improve health and care with us</p> -->
 
                               </div>
                               <figure class="profile wow fadeInUp" data-wow-delay="1s">
-                                   <img src="images/Bot.jpeg" class="img-responsive" alt="">
+                                   <img src="https://image.freepik.com/free-vector/medical-background-design_1212-116.jpg" class="img-responsive" alt="">
                                    <figcaption>
-                                        <h3>Dr.Bot</h3>
-                                        <p>General Principal</p>
+                                        <!-- <h3>Dr.Bot</h3>
+                                        <p>General Principal</p> -->
                                    </figcaption>
                               </figure>
                          </div>
@@ -1164,7 +1165,7 @@ if (isset($_POST['submit'])) {
                <div class="row">
 
                     <div class="col-md-6 col-sm-6">
-                         <img src="images/Bot.jpeg" class="img-responsive" alt="">
+                         <img src="https://image.freepik.com/free-vector/medical-background-design_1212-116.jpg" class="img-responsive" alt="">
                     </div>
 
                     <div class="col-md-6 col-sm-6">
