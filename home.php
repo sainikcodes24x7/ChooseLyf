@@ -199,7 +199,7 @@ if ($_SESSION['status'] != 'Active') {
 
                               </div>
                               <figure class="profile wow fadeInUp" data-wow-delay="1s">
-                                   <img src="images/Bot.jpeg" class="img-responsive" alt="">
+                                   <img src="https://image.freepik.com/free-vector/medical-background-design_1212-116.jpg" class="img-responsive" alt="">
                                    <figcaption>
                                         <!-- <h3>Dr.Bot</h3>
                                         <p>General Principal</p> -->
