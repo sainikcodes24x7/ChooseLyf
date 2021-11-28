@@ -968,7 +968,7 @@ if (isset($_POST['submit'])) {
 <html lang="en">
 <head>
 
-     <title>Disease Predictor</title>
+     <title>ChooseLyf</title>
 
 <script src="https://kit.fontawesome.com/b62e73b8ee.js" crossorigin="anonymous"></script>
   <style >

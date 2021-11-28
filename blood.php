@@ -1,9 +1,11 @@
 <?php
 session_start();
-if(isset($_POST['logout']))
-{include("destroy.php");}
-if($_SESSION['status']!="Active")
- {header("location:login.php");}
+if (isset($_POST['logout'])) {
+    include 'destroy.php';
+}
+if ($_SESSION['status'] != 'Active') {
+    header('location:login.php');
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -67,6 +69,9 @@ if($_SESSION['status']!="Active")
 	box-shadow: 0px 0px 10px 4px black;
 
 }
+.wow {
+          color: #a5c422;
+     }
      </style>
 
 </head>
@@ -123,7 +128,9 @@ if($_SESSION['status']!="Active")
                          <li><a href="home.php" class="smoothScroll">Home</a></li>
                          <li><a href="#id1" class="smoothScroll">Contact</a></li>
                         <li><form method="post"><button type="submit"name="logout" class="btn1">LogOut</button></form></li>
-                        <li><h5><i class="fas fa-user"></i><?php echo $_SESSION['username'];?></h5></li>
+                        <li><h5><i class="fas fa-user"></i><?php echo $_SESSION[
+                            'username'
+                        ]; ?></h5></li>
                     </ul>
                </div>
 
@@ -209,7 +216,7 @@ if($_SESSION['status']!="Active")
                <div class="row">
 
                     <div class="col-md-6 col-sm-6">
-                         <img src="images/blood1.png" class="img-responsive" alt="">
+                         <img src="https://us.123rf.com/450wm/yupiramos/yupiramos1803/yupiramos180330947/98841003-heart-and-bag-blood-donor-transfusion-for-medical-care-illustration-.jpg?ver=6" class="img-responsive" alt="">
                     </div>
 
                     <div class="col-md-6 col-sm-6">
