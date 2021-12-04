@@ -1,9 +1,11 @@
 <?php
 session_start();
-if(isset($_POST['logout']))
-{include("destroy.php");}
-if($_SESSION['status']!="Active")
- {header("location:login.php");}
+if (isset($_POST['logout'])) {
+    include 'destroy.php';
+}
+if ($_SESSION['status'] != 'Active') {
+    header('location:login.php');
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -94,11 +96,11 @@ if($_SESSION['status']!="Active")
                <div class="row">
 
                     <div class="col-md-4 col-sm-5">
-                         <p>Welcome to Health Care Bot</p>
+                         <p>Welcome to ChooseLyf</p>
                     </div>
 
                     <div class="col-md-8 col-sm-7 text-align-right">
-                         <span class="phone-icon"><i class="fa fa-phone"></i> +91-010-060-0160</span>
+                         <span class="phone-icon"><i class="fa fa-phone"></i> +</span>
                          <span class="email-icon"><i class="fa fa-envelope-o"></i> <a href="#">stl@company.com</a></span>
                     </div>
 
@@ -129,7 +131,9 @@ if($_SESSION['status']!="Active")
                          <li><a href="#top" class="smoothScroll">Home</a></li>
                          <li><a href="#id1"  class="smoothScroll">Contact</a></li>
                         <li><form method="post"><button type="submit" name="logout" class="btn1">LogOut</button></form></li>
-                      <li><h5><i class="fas fa-user"></i><?php echo $_SESSION['username'];?></h5></li>
+                      <li><h5><i class="fas fa-user"></i><?php echo $_SESSION[
+                          'username'
+                      ]; ?></h5></li>
                     </ul>
                </div>
 
