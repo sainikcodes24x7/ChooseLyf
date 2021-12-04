@@ -1,9 +1,11 @@
 <?php
 session_start();
-if(isset($_POST['logout']))
-{include("destroy.php");}
-if($_SESSION['status']!="Active")
- {header("location:login.php");}
+if (isset($_POST['logout'])) {
+    include 'destroy.php';
+}
+if ($_SESSION['status'] != 'Active') {
+    header('location:login.php');
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -87,12 +89,12 @@ if($_SESSION['status']!="Active")
                <div class="row">
 
                     <div class="col-md-4 col-sm-5">
-                         <p>Welcome to Health Care Bot</p>
+                         <p>Welcome to ChooseLyf</p>
                     </div>
 
                     <div class="col-md-8 col-sm-7 text-align-right">
-                         <span class="phone-icon"><i class="fa fa-phone"></i> +91-010-060-0160</span>
-                         <span class="email-icon"><i class="fa fa-envelope-o"></i> <a href="#">stl@company.com</a></span>
+                         <span class="phone-icon"><i class="fa fa-phone"></i> +91-9330554877</span>
+                         <span class="email-icon"><i class="fa fa-envelope-o"></i> <a href="#">chooselyf@gmail.com</a></span>
                     </div>
 
                </div>
@@ -111,7 +113,7 @@ if($_SESSION['status']!="Active")
                     </button>
 
                     <!-- lOGO TEXT HERE -->
-                    <a href="home.php" class="navbar-brand"><i class="fa fa-h-square"></i>ealth Care Bot</a>
+                    <a href="home.php" class="navbar-brand"><i class="fa fa-c-square"></i>ChooseLyf</a>
                </div>
 
                <!-- MENU LINKS -->
@@ -120,7 +122,9 @@ if($_SESSION['status']!="Active")
                          <li><a href="home.php" class="smoothScroll">Home</a></li>
                          <li><a href="#idb" class="smoothScroll">Contact</a></li>
                         <li><form method="post"><button type="submit"name="logout" class="btn1">LogOut</button></form></li>
-                        <li><h5><i class="fas fa-user"></i><?php echo $_SESSION['username'];?></h5></li>
+                        <li><h5><i class="fas fa-user"></i><?php echo $_SESSION[
+                            'username'
+                        ]; ?></h5></li>
                     </ul>
                </div>
 
@@ -137,7 +141,7 @@ if($_SESSION['status']!="Active")
                          <!-- NEWS THUMB -->
                          <div class="news-detail-thumb">
                               <div class="news-image">
-                                   <img src="images/news-image3.jpg" class="img-responsive" alt="">
+                                   <img src="https://img.graphicsurf.com/2020/08/medicine-vector-flat-illustration.jpg" class="img-responsive" alt="">
                               </div>
                               <h3>Select the symptoms you are experiencing...</h3>
                               <blockquote>It is the important part for judgement.So select wisely.</blockquote>
@@ -417,11 +421,13 @@ if($_SESSION['status']!="Active")
                     <section>
                         <div class="container">
                                 <div>
-                                  <h2 class="wow fadeInUp" data-wow-delay="0.6s">AI Therapy is modern health care</h2>
+                                  <h2 class="wow fadeInUp" data-wow-delay="0.6s">Modern healthcare today
+</h2>
                                 </div>
                                 <div class="wow fadeInUp" data-wow-delay="0.8s">
-                                         <p>Health Care Bot is an AI Therapy platform that supports your health anytime and anywhere.<br>
-                                         It is affordable, private, and always available.<br></p>
+                                         <p>Share to Twitter
+Modern healthcare today
+Modern healthcare has been transformed by advances in technology. The rise of a consumerization culture where people can easily shop around for suitable services also has an impact on modern healthcare. .<br></p>
                                 </div>
 
 
@@ -443,11 +449,11 @@ if($_SESSION['status']!="Active")
                     <div class="col-md-4 col-sm-6">
                          <div class="footer-thumb">
                               <h4 class="wow fadeInUp" data-wow-delay="0.4s">Contact Info</h4>
-                              <p>STL Hospital<br>MANIT Square-462003<br>Bhopal, M.P</p>
+                              <p>ChooseLyf Limited<br>College Square-745896<br>Kolkata, W.B.</p>
 
                               <div class="contact-info">
-                                   <p><i class="fa fa-phone"></i> +91-010-070-0170</p>
-                                   <p><i class="fa fa-envelope-o"></i> <a href="#">stl@company.com</a></p>
+                                   <p><i class="fa fa-phone"></i> +91-9330554877</p>
+                                   <p><i class="fa fa-envelope-o"></i> <a href="#">chooselyf@gmail.com</a></p>
                               </div>
                          </div>
                     </div>
@@ -458,15 +464,15 @@ if($_SESSION['status']!="Active")
                     <div class="col-md-12 col-sm-12 border-top">
                          <div class="col-md-4 col-sm-6">
                               <div class="copyright-text">
-                                   <p>Copyright &copy; 2020 STL </p>
+                                   <p>Copyright &copy; 2021 ChooseLyf</p>
                               </div>
                          </div>
                          <div class="col-md-6 col-sm-6">
                               <div class="footer-link">
-                                   <a href="#">STL Laboratory Tests</a>
+                                   <a href="#">ChooseLyf Tests</a>
                                    <a href="#">Departments</a>
                                    <a href="#">Insurance Policy</a>
-                                   <a href="#">Careers</a>
+                                   <!-- <a href="#">Careers</a> -->
                               </div>
                          </div>
                          <div class="col-md-2 col-sm-2 text-align-center">

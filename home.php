@@ -59,6 +59,9 @@ if ($_SESSION['status'] != 'Active') {
      	box-shadow: 0px 0px 10px 4px black;
        color: #a5c422;
      }
+     .wow {
+          color: #a5c422;
+     }
      </style>
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -100,8 +103,13 @@ if ($_SESSION['status'] != 'Active') {
                     </div>
 
                     <div class="col-md-8 col-sm-7 text-align-right">
+<<<<<<< HEAD
                          <span class="phone-icon"><i class="fa fa-phone"></i> +</span>
                          <span class="email-icon"><i class="fa fa-envelope-o"></i> <a href="#">stl@company.com</a></span>
+=======
+                         <span class="phone-icon"><i class="fa fa-phone"></i> +91-9330554877</span>
+                         <span class="email-icon"><i class="fa fa-envelope-o"></i> <a href="#">chooselyf@gmail.com</a></span>
+>>>>>>> cdf4865f5bfb15c8a1977e985c4497e6f38016e0
                     </div>
 
                </div>
@@ -122,7 +130,7 @@ if ($_SESSION['status'] != 'Active') {
                     </button>
 
                     <!-- lOGO TEXT HERE -->
-                    <a href="home.php" class="navbar-brand"><i class="fa fa-h-square"></i>ealth Care Bot</a>
+                    <a href="home.php" class="navbar-brand"><i class="fa fa-h-square"></i>ChooseLyf</a>
                </div>
 
                <!-- MENU LINKS -->
@@ -190,16 +198,16 @@ if ($_SESSION['status'] != 'Active') {
 
                     <div class="col-md-6 col-sm-6">
                          <div class="about-info">
-                              <h2 class="wow fadeInUp" data-wow-delay="0.6s">Welcome to Your <i class="fa fa-h-square"></i>ealth Care Bot</h2>
+                              <h2 class="wow fadeInUp" data-wow-delay="0.6s">Welcome to  <i class="fa fa-c-square"></i>ChooseLyf App</h2>
                               <div class="wow fadeInUp" data-wow-delay="0.8s">
-                                   <p>Improve health and care with us</p>
+                                   <!-- <p>Improve health and care with us</p> -->
 
                               </div>
                               <figure class="profile wow fadeInUp" data-wow-delay="1s">
-                                   <img src="images/Bot.jpeg" class="img-responsive" alt="">
+                                   <img src="https://image.freepik.com/free-vector/medical-background-design_1212-116.jpg" class="img-responsive" alt="">
                                    <figcaption>
-                                        <h3>Dr.Bot</h3>
-                                        <p>General Principal</p>
+                                        <!-- <h3>Dr.Bot</h3>
+                                        <p>General Principal</p> -->
                                    </figcaption>
                               </figure>
                          </div>
@@ -212,11 +220,12 @@ if ($_SESSION['status'] != 'Active') {
      <section>
          <div class="textalign">
                  <div>
-                     <h2 class="wow fadeInUp" data-wow-delay="0.2s"><p class="textalign1">AI Therapy is modern health care</p></h2>
+                     <h2 class="wow fadeInUp" data-wow-delay="0.2s"><p class="textalign1">Modern healthcare today</p></h2>
                  </div>
                  <div class="wow fadeInUp" data-wow-delay="0.4s">
-                          <p class="textalign2">Health Care Bot is an AI Therapy platform that supports your health anytime and anywhere.<br>
-                          It is affordable, private, and always available.<br></p>
+                          <p class="textalign2">Share to Twitter
+Modern healthcare today
+Modern healthcare has been transformed by advances in technology. The rise of a consumerization culture where people can easily shop around for suitable services also has an impact on modern healthcare.<br></p>
                  </div>
 
 
@@ -241,7 +250,7 @@ if ($_SESSION['status'] != 'Active') {
                          <div class="team-thumb wow fadeInUp" data-wow-delay="0.2s">
                              <a href="index.php"><img src="images/Check.png" class="img-responsive" alt=""></a>
                              <div  class="team-contact-info" >
-                                 <p>Get regular checkups to gain insights into Symptom reduction.</p>
+                                 <p>Get regular checkups.</p>
                              </div>
 
 
@@ -253,7 +262,7 @@ if ($_SESSION['status'] != 'Active') {
                          <div class="team-thumb wow fadeInUp" data-wow-delay="0.4s">
                              <a href="index.php"><img src="images/Clock.png" class="img-responsive" alt=""></a>
                               <div class="team-contact-info" >
-                                  <p>Book appointments whenever you need.</p>
+                                  <p>Book appointments.</p>
                              </div>
                          </div>
                     </div>
@@ -262,7 +271,7 @@ if ($_SESSION['status'] != 'Active') {
                          <div class="team-thumb wow fadeInUp" data-wow-delay="0.6s">
                              <a href="blood.php"><img src="images/Heart.png" class="img-responsive" alt=""></a>
                                 <div class="team-contact-info">
-                                    <p>Check the blood availability from anywhere.</p>
+                                    <p>Check the blood availability .</p>
                              </div>
                          </div>
                     </div>
@@ -282,11 +291,11 @@ if ($_SESSION['status'] != 'Active') {
                     <div class="col-md-4 col-sm-6">
                          <div class="footer-thumb">
                               <h4 class="wow fadeInUp" data-wow-delay="0.4s">Contact Info</h4>
-                              <p>STL Hospital<br>MANIT Square-462003<br>Bhopal, M.P</p>
+                              <p>ChooseLyf Limited<br>COLLEGE Square-754214<br>Kolkata, W.B.</p>
 
                               <div class="contact-info">
-                                   <p><i class="fa fa-phone"></i> +91-010-070-0170</p>
-                                   <p><i class="fa fa-envelope-o"></i> <a href="#">stl@company.com</a></p>
+                                   <p><i class="fa fa-phone"></i> +91-9330554877</p>
+                                   <p><i class="fa fa-envelope-o"></i> <a href="#">chooselyf@gmail.com</a></p>
                               </div>
                          </div>
                     </div>
@@ -297,15 +306,15 @@ if ($_SESSION['status'] != 'Active') {
                     <div class="col-md-12 col-sm-12 border-top">
                          <div class="col-md-4 col-sm-6">
                               <div class="copyright-text">
-                                   <p>Copyright &copy; 2020 STL </p>
+                                   <p>Copyright &copy; 2021 ChooseLyf </p>
                               </div>
                          </div>
                          <div class="col-md-6 col-sm-6">
                               <div class="footer-link">
-                                   <a href="#">STL Laboratory Tests</a>
+                                   <a href="#">ChooseLyf Tests</a>
                                    <a href="#">Departments</a>
                                    <a href="#">Insurance Policy</a>
-                                   <a href="#">Careers</a>
+                                   <!-- <a href="#">Careers</a> -->
                               </div>
                          </div>
                          <div class="col-md-2 col-sm-2 text-align-center">
