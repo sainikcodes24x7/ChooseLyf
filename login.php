@@ -1,40 +1,35 @@
 <?php
-$error = array('email'=>'','password'=>'');
-if(isset($_POST['submit1']))
-{
-	$email=$_POST['email'];
-	$pass=$_POST['password'];
+$error = array('email' => '', 'password' => '');
+if (isset($_POST['submit1'])) {
+	$email = $_POST['email'];
+	$pass = $_POST['password'];
 
-	$servername='localhost';
-	$user='root';
-	 $password='';
-	$db='register';
-	$con=mysqli_connect($servername,$user,$password,$db);
-	if(!$con)
-	{
-		echo "Unable to connect to database".mysqli_connect_error();
+	$servername = 'localhost';
+	$user = 'root';
+	$password = '';
+	$db = 'register';
+	$con = mysqli_connect($servername, $user, $password, $db);
+	if (!$con) {
+		echo "Unable to connect to database" . mysqli_connect_error();
 	}
-	$query0="SELECT * FROM information WHERE Email='$email'";
-	$result0=mysqli_fetch_assoc(mysqli_query($con,$query0));
-	if($result0['Email']!=$email)
-	{
-		$error['email']="Not a valid user";
+	$query0 = "SELECT * FROM information WHERE Email='$email'";
+	$result0 = mysqli_fetch_assoc(mysqli_query($con, $query0));
+	if ($result0['Email'] != $email) {
+		$error['email'] = "Not a valid user";
+	} else {
+		$query1 = "SELECT * FROM information WHERE Password='$pass'";
+		$result1 = mysqli_fetch_assoc(mysqli_query($con, $query1));
+		if ($result1['Password'] != $pass) {
+			$error['password'] = "Incorrect password";
+		}
 	}
-	else{$query1="SELECT * FROM information WHERE Password='$pass'";
-	$result1=mysqli_fetch_assoc(mysqli_query($con,$query1));
-	if($result1['Password']!=$pass)
-	{
-		$error['password']="Incorrect password";
-	}
-}
-	if(!array_filter($error))
-	{
-		$query2="SELECT * FROM information WHERE Email='$email' AND Password='$pass'  ";
-		$result2=mysqli_fetch_assoc(mysqli_query($con,$query2));
+	if (!array_filter($error)) {
+		$query2 = "SELECT * FROM information WHERE Email='$email' AND Password='$pass'  ";
+		$result2 = mysqli_fetch_assoc(mysqli_query($con, $query2));
 		session_start();
 		$_SESSION['username'] = $result2['Username'];
 		$_SESSION['password'] = $pass;
-		$_SESSION['status']="Active";
+		$_SESSION['status'] = "Active";
 		header("location:home.php");
 	}
 }
@@ -42,20 +37,32 @@ if(isset($_POST['submit1']))
 
 <!DOCTYPE html>
 <html>
+
 <head>
-<title> Login Form</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<!-- Custom Theme files -->
-<link href="registration.css" rel="stylesheet" type="text/css" media="all" />
+	<title> Login Form</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!-- Custom Theme files -->
+	<link href="registration.css" rel="stylesheet" type="text/css" media="all" />
+
+	<style>
+		#hae {
+			font-size: 5rem;
+			font-weight: 600;
+		}
+	</style>
 
 </head>
+
 <body>
 
 	<div class="main-w3layouts wrapper">
-		<h1><font color="#a5c422"><b>Login Form</b> </font></h1>
+		<h1 id="hae">
+			<font color="#a5c422"><b>Login Form</b> </font>
+		</h1>
 		<div class="main-agileinfo">
 			<div class="agileits-top">
+				<!-- <h1 id="top">Welcome to ChooseLyf </h1> -->
 				<form action="#" method="post">
 					<input class="text email" type="email" name="email" placeholder="Email" required="">
 					<div class="red-text"><?php echo $error['email']; ?></div><br>
@@ -75,4 +82,5 @@ if(isset($_POST['submit1']))
 	</div>
 
 </body>
+
 </html>

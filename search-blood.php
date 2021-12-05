@@ -86,6 +86,15 @@
                 margin-left: 20px;
                 margin-right: 20px;
            }
+
+           .sub p {
+                margin-top: 55px;
+                font-size: 2rem;
+           }
+
+           .sub span {
+                font-size: 2.5rem;
+           }
       </style>
  </head>
 
@@ -156,25 +165,28 @@
            <div class="searchopt">
                 <div class="col-md-6">
                      <div class="form-group col-md-12">
-                          <form class="form-horizontal" method="" action="">
+                          <form class="form-horizontal" method="" onsubmit="return false">
                                <div class="form-group">
                                     <label class="col-sm-6">
                                          <p class="class1">Search for donor with blood group</p>
                                     </label>
                                     <div class="col-sm-4">
-                                         <select name="blood_group" class="form-control">
-                                              <option id="bb" value="A+">A+</option>
-                                              <option id="bb" value="O+">O+</option>
-                                              <option id="bb" value="O-">O-</option>
-                                              <option id="bb" value="A-">A-</option>
-                                              <option id="bb" value="B+">B+</option>
-                                              <option id="bb" value="B-">B-</option>
-                                              <option id="bb" value="AB+">AB+</option>
-                                              <option id="bb"  value="AB-">AB-</option>
+                                         <select id="bb" name="blood_group" class="form-control">
+                                              <option value="A+">A+</option>
+                                              <option value="O+">O+</option>
+                                              <option value="O-">O-</option>
+                                              <option value="A-">A-</option>
+                                              <option value="B+">B+</option>
+                                              <option value="B-">B-</option>
+                                              <option value="AB+">AB+</option>
+                                              <option value="AB-">AB-</option>
                                          </select>
                                     </div>
                                     <div class="col-sm-2">
-                                         <button class="btn1" name="searchBtn" onclick="calc_disp()">Search</button>
+                                         <button type="submit" class="btn1" name="searchBtn" onclick="calc_disp()">Search</button>
+                                    </div><br><br>
+                                    <div class="sub">
+                                         <p>Blood category needed <span class="output"></span></p>
                                     </div>
                                </div>
 
@@ -230,29 +242,50 @@
       <script src="js/owl.carousel.min.js"></script>
       <script src="js/custom.js"></script>
 
-      <script>
+      <script type="text/javascript">
            function calc_disp() {
-                var x = document.getElementById("bb").value;
-                // x.style.display = "block";
-                if (x == "O+") {
-                     alert("O+");
-                } else if (x == "A+") {
-                     alert("A+");
-                } else if (x == "O-") {
-                     alert("O-");
-                } else if (x == "A-") {
-                     alert("A-");
-                } else if (x == "B+") {
-                     alert("B+");
-                } else if (x == "B-") {
-                     alert("B-");
-                } else if (x == "AB+") {
-                     alert("AB+");
-                } else if (x == "AB-") {
-                     alert("AB-");
+                selectElement = document.querySelector('#bb');
+                output = selectElement.value;
+                if (output == "A+") {
+                     document.querySelector('.output').textContent = "A+, A-, O+, O-";
+                } else if (output == "O+") {
+                     document.querySelector('.output').textContent = "O+, O-";
+                } else if (output == "O-") {
+                     document.querySelector('.output').textContent = "O-";
+                } else if (output == "A-") {
+                     document.querySelector('.output').textContent = "A-, O-";
+                } else if (output == "B+") {
+                     document.querySelector('.output').textContent = "B+, B-, O+, O-";
+                } else if (output == "B-") {
+                     document.querySelector('.output').textContent = "B-, O-";
+                } else if (output == "AB+") {
+                     document.querySelector('.output').textContent = "All";
+                } else if (output == "AB-") {
+                     document.querySelector('.output').textContent = "AB-, A-, B-, O-";
                 } else {
-                     alert("Please select a blood group");
+                     document.querySelector('.output').textContent = "NOT AVAILABLE";
                 }
+                //  var x = document.getElementById("bb").value;
+                // x.style.display = "block";
+                //  if (x == "O+") {
+                //       alert("O+");
+                //  } else if (x == "A+") {
+                //       alert("A+");
+                //  } else if (x == "O-") {
+                //       alert("O-");
+                //  } else if (x == "A-") {
+                //       alert("A-");
+                //  } else if (x == "B+") {
+                //       alert("B+");
+                //  } else if (x == "B-") {
+                //       alert("B-");
+                //  } else if (x == "AB+") {
+                //       alert("AB+");
+                //  } else if (x == "AB-") {
+                //       alert("AB-");
+                //  } else {
+                //       alert("Please select a blood group");
+                //  }
 
            }
       </script>

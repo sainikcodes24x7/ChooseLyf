@@ -1,5 +1,83 @@
-
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, nav ul, nav li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+dl,
+dt,
+dd,
+ol,
+nav ul,
+nav li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -8,21 +86,36 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
   margin: 0px;
   padding: 0px;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after, q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: '';
   content: none;
 }
@@ -36,22 +129,32 @@ table {
 a {
   text-decoration: none;
 }
-.btn1{
-    padding-left: 15px;
-    padding-right: 15px;
-    background: #a5c422;
-    color: #ffffff;
-    font-weight: 600;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    display: inline-block;
-    border-radius: 3px;
+
+
+
+/* #top {
+  font-size: 4rem;
+  color: #333;
+} */
+
+.btn1 {
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #a5c422;
+  color: #ffffff;
+  font-weight: 600;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: inline-block;
+  border-radius: 3px;
 }
-.btn1:hover{
-  background:linear-gradient(135deg,black,darkslategrey);
+
+.btn1:hover {
+  background: linear-gradient(135deg, black, darkslategrey);
   box-shadow: 0px 0px 10px 4px black;
   color: #a5c422;
 }
+
 .txt-rt {
   text-align: right;
 }
@@ -148,10 +251,11 @@ h1 {
   width: 35%;
   margin: 3em auto;
   /* background: #979A9A ; */
-    background: linear-gradient(to top, #2f4f4f, black);
+  background: linear-gradient(to top, #2f4f4f, black);
   background-size: cover;
 }
-.logout-btn{
+
+.logout-btn {
   height: 100px;
   width: 300px;
   background-color: #a5c422;
@@ -160,10 +264,12 @@ h1 {
 
 .agileits-top {
   padding: 3em;
-  color : #000000;
+  color: #000000;
 }
 
-input[type="text"], input[type="email"], input[type="password"] {
+input[type="text"],
+input[type="email"],
+input[type="password"] {
   font-size: 0.9em;
   color: #fff;
   font-weight: 100;
@@ -183,17 +289,20 @@ input[type="text"], input[type="email"], input[type="password"] {
   font-family: 'Roboto', sans-serif;
 }
 
-input.email, input.text.w3lpass {
+input.email,
+input.text.w3lpass {
   margin: 2em 0;
 }
 
-.text:focus, .text:valid {
+.text:focus,
+.text:valid {
   box-shadow: none;
   outline: none;
   background-position: 0 0;
 }
 
-.text:focus::-webkit-input-placeholder, .text:valid::-webkit-input-placeholder {
+.text:focus::-webkit-input-placeholder,
+.text:valid::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.7);
   font-size: .9em;
   -webkit-transform: translateY(-30px);
@@ -416,7 +525,10 @@ input.checkbox:checked:after {
 
 /*-- responsive-design --*/
 @media(max-width:1440px) {
-  input[type="text"], input[type="email"], input[type="password"] {
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
     width: 94%;
   }
 }
@@ -472,7 +584,9 @@ input.checkbox:checked:after {
     width: 58%;
   }
 
-  input[type="text"], input[type="email"], input[type="password"] {
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
     width: 93%;
   }
 }
@@ -500,7 +614,8 @@ input.checkbox:checked:after {
     padding: 2.2em;
   }
 
-  input.email, input.text.w3lpass {
+  input.email,
+  input.text.w3lpass {
     margin: 1.5em 0;
   }
 
@@ -534,7 +649,9 @@ input.checkbox:checked:after {
     padding: 1.8em;
   }
 
-  input[type="text"], input[type="email"], input[type="password"] {
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
     width: 91%;
   }
 
@@ -554,11 +671,13 @@ input.checkbox:checked:after {
     margin: 1.5em auto;
   }
 
-  .text:focus, .text:valid {
+  .text:focus,
+  .text:valid {
     background-position: 0 0px;
   }
 
-  .wthree-text ul li, .wthree-text ul li:nth-child(2) {
+  .wthree-text ul li,
+  .wthree-text ul li:nth-child(2) {
     display: block;
     float: none;
   }
@@ -610,7 +729,9 @@ input.checkbox:checked:after {
     margin: 0 0 1em;
   }
 
-  input[type="text"], input[type="email"], input[type="password"] {
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
     width: 89.5%;
     font-size: 0.85em;
   }
@@ -625,7 +746,8 @@ input.checkbox:checked:after {
     margin: 1em auto;
   }
 
-  .text:focus, .text:valid {
+  .text:focus,
+  .text:valid {
     background-position: 0 0px;
   }
 
@@ -647,6 +769,7 @@ input.checkbox:checked:after {
     padding: 1em 0 0;
   }
 }
-.red-text{
+
+.red-text {
   color: red;
 }
