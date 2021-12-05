@@ -1197,7 +1197,7 @@ if (isset($_POST['submit'])) {
 
                             <div class="col-md-12 col-sm-12">
 
-                                <h3>Result: </h3>
+                                <h3>Result:&nbsp;&nbsp; <button class="btn1"> <a href="https://choose-lyf-predict.herokuapp.com/" target="_blank" style="color: red;">CHECK RESULTS </a>  </button> </h3>
                                 <h2><?php if (
                                         $output != ''
                                     ) {
