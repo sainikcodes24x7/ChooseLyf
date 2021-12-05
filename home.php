@@ -262,7 +262,7 @@ if ($_SESSION['status'] != 'Active') {
                          <div class="team-thumb wow fadeInUp" data-wow-delay="0.2s">
                               <a href="index.php"><img src="images/Check.png" class="img-responsive" alt=""></a>
                               <div class="team-contact-info">
-                                   <p>Get regular checkups.</p>
+                              <button>Get Regular Checkups</button>
                               </div>
 
 
@@ -274,7 +274,7 @@ if ($_SESSION['status'] != 'Active') {
                          <div class="team-thumb wow fadeInUp" data-wow-delay="0.4s">
                               <a href="index.php"><img src="images/Clock.png" class="img-responsive" alt=""></a>
                               <div class="team-contact-info">
-                                   <p>Book appointments.</p>
+                              <button><a href="" style="color: red;" >Book Appointments</a></button>
                               </div>
                          </div>
                     </div>
@@ -283,7 +283,28 @@ if ($_SESSION['status'] != 'Active') {
                          <div class="team-thumb wow fadeInUp" data-wow-delay="0.6s">
                               <a href="blood.php"><img src="images/Heart.png" class="img-responsive" alt=""></a>
                               <div class="team-contact-info">
-                                   <p>Check the blood availability .</p>
+                              <button>Check the blood availability</button>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <div class="team-thumb wow fadeInUp" data-wow-delay="0.6s">
+                              <a href="https://choose-lyf-app.herokuapp.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Diagram_of_the_human_heart_%28cropped%29.svg/1043px-Diagram_of_the_human_heart_%28cropped%29.svg.png" class="img-responsive" alt=""></a>
+                              <div class="team-contact-info">
+                                   <button><a href="https://choose-lyf-app.herokuapp.com/" style="color: red;" >Check Heart Disease</a></button>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6" style="
+    margin-left: 265px;
+    margin-top: 53px;
+">
+                         <div class="team-thumb wow fadeInUp" data-wow-delay="0.6s">
+                              <a href="https://choose-lyf-app.herokuapp.com/"><img src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/image_article_collections/anatomy_pages/Kidney2.jpg" class="img-responsive" alt=""></a>
+                              <div class="team-contact-info">
+                              <button><a href="https://choose-lyf-app.herokuapp.com/" style="color: red;" >Check Kidney Disease</a></button>
                               </div>
                          </div>
                     </div>

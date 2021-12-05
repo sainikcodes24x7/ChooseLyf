@@ -183,7 +183,7 @@
                                          </select>
                                     </div>
                                     <div class="col-sm-2">
-                                         <button type="submit" class="btn1" name="searchBtn" onclick="calc_disp()">Search</button>
+                                         <button type="submit" class="btn1" name="searchBtn" ">Search</button>
                                     </div><br><br>
                                     <div class="sub">
                                          <p>Blood category needed <span class="output"></span></p>
@@ -265,6 +265,12 @@
                 } else {
                      document.querySelector('.output').textContent = "NOT AVAILABLE";
                 }
+                
+          
+                
+           
+      
+
                 //  var x = document.getElementById("bb").value;
                 // x.style.display = "block";
                 //  if (x == "O+") {
