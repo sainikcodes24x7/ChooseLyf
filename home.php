@@ -103,6 +103,9 @@ if ($_SESSION['status'] != 'Active') {
                     </div>
 
                     <div class="col-md-8 col-sm-7 text-align-right">
+
+                         <span class="phone-icon"><i class="fa fa-phone"></i> +</span>
+                         <span class="email-icon"><i class="fa fa-envelope-o"></i> <a href="#">stl@company.com</a></span>
                          <span class="phone-icon"><i class="fa fa-phone"></i> +91-9330554877</span>
                          <span class="email-icon"><i class="fa fa-envelope-o"></i> <a href="#">chooselyf@gmail.com</a></span>
                     </div>
